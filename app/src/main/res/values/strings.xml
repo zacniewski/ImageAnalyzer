@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">ImageAnalyzer</string>
+    <string name="artur_app_version">ver. 0.1</string>
+    <string name="artur_hint_username">Username</string>
+    <string name="artur_hint_password">Password</string>
+    <string name="artur_button_next">Next</string>
+    <string name="artur_button_cancel">Cancel</string>
+    <string name="artur_error_password">Password must contain at least 8 characters.</string>
+    <string name="artur_filter_title">Filter</string>
+    <string name="artur_search_title">Search</string>
+    <string name="artur_product_title">Title</string>
+    <string name="artur_product_description">Secondary text</string>
+    <string name="action_settings">OPTIONS</string>
+    <string name="canny">Canny</string>
+    <string name="faces">Faces</string>
+    <string name="create_order">Call me bla ...</string>
+
+
+
+    <!-- artur backdrop menu labels -->
+    <string name="artur_featured_label">Featured</string>
+    <string name="artur_apartment_label">Apartment</string>
+    <string name="artur_accessories_label">Accessories</string>
+    <string name="artur_shoes_label">Shoes</string>
+    <string name="artur_tops_label">Tops</string>
+    <string name="artur_bottoms_label">Bottoms</string>
+    <string name="artur_dresses_label">Dresses</string>
+    <string name="artur_account_label">My Account</string>
 </resources>
