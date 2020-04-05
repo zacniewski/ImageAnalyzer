@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.widget.ShareActionProvider;
+import androidx.core.view.MenuItemCompat;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -22,6 +22,8 @@ import org.opencv.imgproc.Imgproc;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ShareActionProvider shareActionProvider;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,14 +37,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Przygotowanie menu i dodanie elementów do paska aplikacji
-        getMenuInflater().inflate(R.menu.artur_toolbar_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuItem menuItem = menu.findItem(R.id.action_share);
+        shareActionProvider =
+                (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
+        setShareActionIntent("Share something with me ...");
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.filter:
+            case R.id.opcja1:
                 Intent intent = new Intent(this, OrderActivity.class);
                 startActivity(intent);
                 return true;
@@ -71,5 +77,13 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.img);
         imageView.setImageBitmap(img_bitmap);
     }
+
+    private void setShareActionIntent(String text) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, text);
+        shareActionProvider.setShareIntent(intent);
+    }
+
 
 }

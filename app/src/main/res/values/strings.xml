@@ -7,14 +7,13 @@
     <string name="artur_button_cancel">Cancel</string>
     <string name="artur_error_password">Password must contain at least 8 characters.</string>
     <string name="artur_filter_title">Filter</string>
-    <string name="artur_search_title">Search</string>
-    <string name="artur_product_title">Title</string>
-    <string name="artur_product_description">Secondary text</string>
-    <string name="action_settings">OPTIONS</string>
+    <string name="title_top">Main fragment</string>
+    <string name="action_share">Share</string>
+    <string name="hello_blank_fragment">Blank Fragment</string>
+    <string name="artur_options">OPTIONS</string>
     <string name="canny">Canny</string>
     <string name="faces">Faces</string>
-    <string name="create_order">Call me bla ...</string>
-
+    <string name="choose_image">Choose image ...</string>
 
 
     <!-- artur backdrop menu labels -->
@@ -26,4 +25,18 @@
     <string name="artur_bottoms_label">Bottoms</string>
     <string name="artur_dresses_label">Dresses</string>
     <string name="artur_account_label">My Account</string>
+
+    <string-array name="algorithms">
+        <item>Canny</item>
+        <item>Blur</item>
+        <item>Sobel</item>
+    </string-array>
+
+    <string-array name="websites">
+        <item>OpenCV</item>
+        <item>Learn OpenCV</item>
+        <item>PyImage Search</item>
+    </string-array>
+
+
 </resources>

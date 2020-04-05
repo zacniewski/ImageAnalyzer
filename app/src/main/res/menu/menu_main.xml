@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="always" >
+
 <!--
     <menu>
             <item android:id="@+id/create_new"
@@ -14,15 +10,18 @@
             <item android:id="@+id/open"
                 android:title="@string/faces" />
         </menu>-->
-    </item>
+
     <item
-        android:id="@+id/search"
-        android:icon="@drawable/artur_search"
-        android:title="@string/artur_search_title"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/filter"
+        android:id="@+id/opcja1"
         android:icon="@drawable/twotone_settings_24"
-        android:title="@string/artur_filter_title"
-        app:showAsAction="always" />
+        android:title="@string/artur_options"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"/>
+
 </menu>

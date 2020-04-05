@@ -7,15 +7,18 @@
     android:orientation="vertical"
     tools:context="net.scientificdev.opencvheartbeat.MainActivity">
 
+    <!--
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
+    -->
         <include
             layout="@layout/toolbar_main"
             android:id="@+id/toolbar" />
 
+    <!--
     </com.google.android.material.appbar.AppBarLayout>
+    -->
 
     <Button
         android:layout_width="match_parent"
